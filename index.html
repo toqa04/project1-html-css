@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToQa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <style>
+*{
+    margin: 0;
+    padding :0;
+
+}
+body
+{
+    margin: 0;
+    padding: 0;
+        overflow: hidden; 
+        width: 100vw; 
+        height: 100vh;
+        background-color: #35182d;
+   
+}
+
+.container{
+background-color: #944e6300;
+position: relative;
+width: fit-content;
+height: 600px;
+padding: 1rem;
+border-radius: 15px;
+left: -400px;
+
+transition: 1s;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #000000be;
+    width: 300px;
+    padding: 2rem;
+    font-family: 'Poppins';
+    height: 600px;
+    border-radius: 30px;
+    position:absolute;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.479);
+   
+    
+}
+
+.nav a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right ,#944E63,#B47B84,#CAA6A6,#FFE7E7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #000;
+    font-size: 5rem;
+    font-weight: 500;
+}
+.nav h1{
+   
+    
+    margin-top: 0;
+    margin-bottom: 0;
+   
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #944E63, #B47B84, #CAA6A6, #FFE7E7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    font-weight: 500;
+    text-shadow: -4px 4px 12px rgba(0, 0, 0, 0.589);
+}
+
+.nav-button{
+    width: 55px;
+    height: 100px;
+    background-color: #000000be;
+    border-radius: 30px;
+    position: absolute;
+    left: 365px;
+    top: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.678);
+    z-index:-1;
+}
+
+.container:hover{
+        left: 0px;
+}
+#nav1
+{
+      z-index: 0;
+      position: absolute;
+      top: 10px;
+   
+
+}
+#nav2
+{
+      z-index: 1;
+      position: absolute;
+   top: 80px;
+   
+}
+#nav3
+{
+      z-index: 2;
+      position: absolute;
+   top: 150px;
+
+}
+
+#nav4
+{
+      z-index: 2;
+      position: absolute;
+   top: 220px;
+
+}
+
+.grid-container {
+        display: grid;
+        place-items: center; 
+        height: 14vh;
+        
+    }
+    .grid-container svg {
+    margin-left: 9px; 
+}
+#nav4 h1
+{
+background: linear-gradient(to right, #3b1c32, #7a1f60, #9b2c7b, #e987cd) ;
+  -webkit-background-clip: text;
+   -webkit-text-fill-color:transparent;
+
+}
+#info
+{
+    display: grid;
+   
+        width: 1000000000000vw; 
+        height: 10000000000000vh;
+     background-color: #35182d;
+    z-index: 1;
+
+}
+#info #top
+{
+    width: 1400px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    background-color: rgba(240, 248, 255, 0.863);
+
+}
+#info h1
+{
+
+ 
+    font-size: 5rem;
+    display: flex;             
+    justify-content: center;    
+    align-items: center; 
+    color: #a0576d;
+   
+    
+    
+}
+#info-i
+{
+    margin: 3px;
+    margin-left: 5px;
+    padding: 10px;
+    color: white;
+    position: absolute;
+    top :100px;
+    left: 22px;
+    display: block;
+    unicode-bidi: isolate;
+
+}
+#info-i p
+{
+    font-size: 2rem;
+    color: #ffffff;
+    float: right;
+    position: relative;
+    top: 30px;
+}
+#info-i a
+{
+    text-decoration: dotted;
+    color: #E7A9B4;
+}
+.Image
+{
+    width: 210px;
+    height: 250px;
+    margin: 0px 20px;
+    border-radius: 20px;
+    filter: blur(5px);
+    float: left;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.678);
+}
+    </style>
+    <script src="./test.JS"></script>
+    <title>Document</title>
+
+    
+</head>
+<body >
+    <div id ="body">
+  
+        <div id="info" class="">
+
+          <div id="top">
+                <h1>Hey, I'm ToQa</h1>
+         </div>
+         <div id="info-i">
+         <img src="info.jpg" class="Image">
+         <p>
+            my name is Taqa Al-Zoubi, and I’m 20 years old. 
+                <br>
+            I am currently a Software Engineering student from the class of 2022
+                <br> 
+            at <a href="https://www.just.edu.jo/">Jordan University of Science and Technology.</a>
+         </p>
+        </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container" id="nav1" >
+        <div class="nav" >
+            <h1>About Me</h1>
+       <div class="nav-button">
+        <div class="grid-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16 " color ="#f7f7f8a2" >
+            
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+          </svg>
+          </div>
+       </div>
+       <a href=""></a>
+       <a href=""></a>
+       <a href=""></a>
+       <a href=""></a>
+       <a href=""></a>
+   </div>
+   </div>
+
+    
+    <div class="container" id="nav2" >
+        <div class="nav" style="background-color:#3b1c32be">
+            <h1>My Skills</h1>
+       <div class="nav-button"style="background-color:#3b1c32be">
+        <div class="grid-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16" color="#f7f7f8a2">
+                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+              </svg>
+              </div>
+       </div>
+       <a href=""></a>
+       <a href=""></a>
+       <a href=""></a>
+       <a href=""></a>
+       <a href=""></a>
+   </div>
+   </div>
+
+
+   <div class="container" id="nav3" >
+    <div class="nav" style="background-color:#6a1e55be">
+         <h1>My Projects</h1>
+   <div class="nav-button"style="background-color:#6a1e55be">
+    <div class="grid-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16" color="#f7f7f8a2">
+            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+          </svg>
+          </div>
+   </div>
+  
+   <a href=""></a>
+   <a href=""></a>
+   <a href=""></a>
+   <a href=""></a>
+   <a href=""></a>
+</div>
+</div>
+  <div class="container" id="nav4" >
+    <div class="nav" style="background-color:#A64D79be">
+        <h1 >Contact Me</h1>
+   <div class="nav-button"style="background-color:#A64D79be">
+    
+    <div class="grid-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16" COLOR ="#f7f7f8a2">
+            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+          </svg>
+          </div>
+
+   </div>
+   <a href=""></a>
+   <a href=""></a>
+   <a href=""></a>
+   <a href=""></a>
+   <a href=""></a>
+</div>
+</div>
+    
+        
+</div> 
+</body>
+</html>
